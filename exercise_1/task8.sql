@@ -1,0 +1,2 @@
+ insert into album(id, name, year, artist_id) values (7, "The Final Frontier",2000, 1);
+ insert into track(name, length, track_number, album_id) values ("Satellite 15... The Final Frontier", "00:08:40",1,7), ("El Dorado", "00:06:49",2,7), ("Mother of Mercy Harris", "00:05:20",3,7), ("Coming Home", "00:05:52",4,7), ("The Alchemist", "00:04:29",5,7), ("Isle of Avalon", "00:09:06",6,7), ("Starblind", "00:07:48",7,7), ("The Talisman", "00:09:03",8,7), ("The Man Who Would Be King", "00:08:28",9,7), ("When the Wild Wind Blows", "00:10:59",10,7);
