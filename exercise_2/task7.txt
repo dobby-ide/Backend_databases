@@ -1,0 +1,14 @@
+Explain the difference between INNER JOIN, LEFT (OUTER) JOIN and RIGHT (OUTER) JOIN.
+
+
+running a JOIN clause between two tables will determine the two table to have a final result based on the 
+common identifier of the two tables which in turns, are the common column of the two tables.
+
+INNER JOIN
+the result will be forced to be only the INTERSECTION on the values of the columns of the two tables where the query exists. 
+
+LEFT JOIN
+the result will also include those values of the JOINED table even if the clause (ON) condition is not applicable.
+RIGHT JOIN
+the result will also include those values of the "original" (FROM) table even if the clause (ON) condition is not true.
+
