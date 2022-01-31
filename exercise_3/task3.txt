@@ -1,0 +1,4 @@
+the deletion of employees is not possible because of a CONSTRAINT. When the db has been created the foreign key has been created to preserve the integrity of the database.
+In this case the constrain for the foreign key depends on the child table "purchase_orders" in column "created_by".
+This constraint was specifically designed to prevent any child kill. On delete NO ACTION prevents the deletion of the row(s). 
+On the other hand On delete CASCADE would have set the child tables to some null value.
