@@ -1,0 +1,52 @@
+#        Why root user is a special user?
+#	 The first thing to notice is that root user is linked to 3 hosts: 
+#        3 localhosts in different formats.
+#        Root user has all privileges and can set other users and roles, 
+#        grant privileges and needs to be secured by using a strong password. 
+#        Apparently there is nothing so special about root user and
+#        it can be replaced allowing a 
+#        newly created user with grant privileges as well.
+#------------------
+#        Why root user need to be secured and remote login disabled?
+#        Because if someone gets access to it then it can destroy 
+#        the whole database, 
+#        stealing data from it and manipulate the whole database, 
+#        depending on the importance of the data 
+#        inside the database, the root 
+#        user needs to be secured with a strong password.
+#        And the root needs to be connected to a localhost 
+#        because of the same reason,
+#        security comes first so we want to make sure root is only 
+#        accessible via the same computer
+#-----------------
+#        Explain how to disable remote login from root user
+#
+#        DELETE FROM mysql.user WHERE User='root' 
+#        AND Host NOT IN ('localhost', '127.0.0.1', '::1');
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
